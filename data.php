@@ -4,7 +4,8 @@ $data = date('D');
 $mes = date('M');
 $dia = date('d');
 $ano = date('Y');
- 
+
+// dias da semana
 $semana = array(
 'Sun' => 'Domingo',
 'Mon' => 'Segunda-Feira',
@@ -14,7 +15,8 @@ $semana = array(
 'Fri' => 'Sexta-Feira',
 'Sat' => 'Sábado'
 );
- 
+
+ // meses do ano
 $mes_extenso = array(
 'Jan' => 'Janeiro',
 'Feb' => 'Fevereiro',
@@ -30,8 +32,10 @@ $mes_extenso = array(
 'Dec' => 'Dezembro'
 );
 
+ // forma que será exibido
 return $semana["$data"] . ", {$dia} de " . $mes_extenso["$mes"] . " de {$ano}" . " às " . date('H:i:s');
 }
 
+// imprimindo o resultado da função
 echo data();
 ?>
